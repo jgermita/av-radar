@@ -41,21 +41,34 @@
 </td>
 
 </tr>
-<tr>
 <tr id="titles"><td>Event Eliminations Appearances</td><td>Championship Appearances</td><td>Events Attended</td></tr>
+<tr>
 <td>
 	<canvas id="elChart" />
 </td>
 
-<td>
-	
+<td>	
 	<canvas id="cmpChart" />
 </td>
 
 <td>
 	<canvas id="evChart" />
 </td>
+</tr>
 
+<tr id="titles"><td>Rookie Awards</td><td>Engineering Inspiration Awards</td><td>todo</td></tr>
+<tr>
+<td>
+	<canvas id="rooChart" />
+</td>
+
+<td>	
+	<canvas id="eiChart" />
+</td>
+
+<td>
+	<canvas id="todoChart" />
+</td>
 </tr>
 </table>
 <h1>AV Radar!</h1><br>
@@ -316,6 +329,126 @@ var myChart6 = new Chart(ctx, {
 
 var ctx = document.getElementById("evChart");
 var myChart7 = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
+        datasets: [{
+            label: '# Awards by team',
+            data: [49, 33, 5, 9, 19, 9, 2, 1],
+            backgroundColor: [
+                'rgba(255, 148, 70, 0.95)',
+                'rgba(0, 128, 0, 0.95)',
+                'rgba(154, 4, 13, 0.6)',
+                'rgba(128, 0, 0, 0.6)',
+                'rgba(128, 0, 0, 1.0)',
+                'rgba(116, 0, 1, 0.9)',
+                'rgba(0, 0, 255, 0.95)',
+                'rgba(128, 0, 0, 0.8)'
+            ],
+            borderColor: [
+                'rgba(57,39,95,1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 216, 0, 1)',
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        legend: {
+			display: false
+		}
+        
+    }
+});
+
+
+var ctx = document.getElementById("rooChart");
+var myChart8 = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
+        datasets: [{
+            label: '# Awards by team',
+            data: [0, 0, 0, 2, 0, 3, 1, 0],
+            backgroundColor: [
+                'rgba(255, 148, 70, 0.95)',
+                'rgba(0, 128, 0, 0.95)',
+                'rgba(154, 4, 13, 0.6)',
+                'rgba(128, 0, 0, 0.6)',
+                'rgba(128, 0, 0, 1.0)',
+                'rgba(116, 0, 1, 0.9)',
+                'rgba(0, 0, 255, 0.95)',
+                'rgba(128, 0, 0, 0.8)'
+            ],
+            borderColor: [
+                'rgba(57,39,95,1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 216, 0, 1)',
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        legend: {
+			display: false
+		}
+        
+    }
+});
+
+
+var ctx = document.getElementById("eiChart");
+var myChart9 = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
+        datasets: [{
+            label: '# Awards by team',
+            data: [4, 1, 0, 0, 0, 0, 0, 0],
+            backgroundColor: [
+                'rgba(255, 148, 70, 0.95)',
+                'rgba(0, 128, 0, 0.95)',
+                'rgba(154, 4, 13, 0.6)',
+                'rgba(128, 0, 0, 0.6)',
+                'rgba(128, 0, 0, 1.0)',
+                'rgba(116, 0, 1, 0.9)',
+                'rgba(0, 0, 255, 0.95)',
+                'rgba(128, 0, 0, 0.8)'
+            ],
+            borderColor: [
+                'rgba(57,39,95,1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 216, 0, 1)',
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        legend: {
+			display: false
+		}
+        
+    }
+});
+
+
+var ctx = document.getElementById("evChart");
+var myChart10 = new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
