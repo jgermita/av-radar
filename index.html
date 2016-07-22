@@ -29,25 +29,29 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: '# Awards by team',
+            data: [43, 18, 2, 5, 2, 12, 2, 0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 148, 70, 0.2)',
+                'rgba(0, 128, 0, 0.2)',
+                'rgba(154, 4, 13, 0.2)',
+                'rgba(128, 0, 0, 0.2)',
+                'rgba(128, 0, 0, 0.2)',
+                'rgba(116, 0, 1, 0.2)',
+                'rgba(0, 0, 255, 0.2)',
+                'rgba(128, 0, 0, 0.2)'
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(57,39,95,1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 216, 0, 1)',
+                'rgba(255, 255, 255, 1)'
             ],
             borderWidth: 1
         }]
@@ -70,5 +74,5 @@ var myChart = new Chart(ctx, {
 
 </body>
 
-<footer><center>v0.0<br>
+<footer><center>v0.01<br>
 Contact Jeremy Germita (jeremy DOT germita AT gmail DOT com) with questions, comments, or concerns.</center></footer>
