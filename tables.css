@@ -67,7 +67,13 @@ table, th, td {
 
 th, td {
     padding: 8px;
-    text-align: left;
+    text-align: center;
+}
+
+#titles {
+	padding: 8px;
+    text-align: center;
+	border-top: 1px solid #ddd;
 }
 
 #buttonGroup {
