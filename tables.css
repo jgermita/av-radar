@@ -74,6 +74,7 @@ th, td {
 	padding: 8px;
     text-align: center;
 	border-top: 1px solid #ddd;
+	font-weight: bold;
 }
 
 #buttonGroup {
