@@ -49,12 +49,12 @@ border: 2px solid WhiteSmoke;
 	border-radius: 8px;
 }
 table {
+	max-width: 75%;
     border-collapse: collapse;
 }
 
 table, th, td {
     border: none;
-	width: auto;
 }
 
 th, td {
