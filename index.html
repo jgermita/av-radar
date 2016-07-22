@@ -9,6 +9,7 @@
         -webkit-user-select: none;
         -ms-user-select: none;
     }
+
     </style>
 </head>
 
@@ -17,20 +18,24 @@
 <body>
 <center>
 <img src="/av-radar/SWOOSH.png" height="50%" alt="AV Radar"></center>
-<h1>
-<b>AV Radar!</b><br>
+
+<center>
+<h1>Awards since 2000</h1>
+<div id="canvas-holder" style="height:50%;width:50%" >
+        
+		<canvas id="myChart" />
+		
+</div>
+<h1>AV Radar!</h1><br>
 <a href="http://www.thebluealliance.com/team/399">399</a> / <a href="http://www.thebluealliance.com/team/585">585</a> / <a href="http://www.thebluealliance.com/team/1110">1110</a><br>
 <a href="http://www.thebluealliance.com/team/1641">1641</a> / <a href="http://www.thebluealliance.com/team/2339">2339</a> / <a href="http://www.thebluealliance.com/team/5012">5012</a><br>
 <a href="http://www.thebluealliance.com/team/5869">5869</a> / <a href="http://www.thebluealliance.com/team/6060">6060</a><br>
 <br><br>
-
-<div id="canvas-holder" style="height:50%;width:50%">
-        <canvas id="myChart" />
-</div>
+</center>
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
         labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
@@ -60,16 +65,12 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
+        
     }
 });
 </script>
+
+
 
 
 </center>
