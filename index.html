@@ -71,15 +71,12 @@
 <h1>Upcoming Events</h1>
 <table style="width:100vh">
 <tr id="headers"><td>#<td>Name<td>School<td>City<td>Event</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/399">399</a><td>Eagle Robotics<td>Lancaster High School<td>Lancaster<td>Chezy Champs</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/585">585</a><td>Cyber Penguins<td>Tehachapi High School<td>Tehachapi<td>TBD</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/1110">1110</a><td>Binary Bulldogs<td>Highland High School<td>Palmdale<td>Retired</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/1641">1641</a> <td>Where's Waldo?<td>Mojave High School<td>Mojave<td>Retired</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/2339">2339</a><td>Robolopes<td>Antelope Valley High School<td>Lancaster<td>TBD</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/5012">5012</a><td>Gryffingear<td>The Palmdale Aerospace Academy<td>Palmdale<td>Chezy Champs</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/5869">5869</a><td>Radical Robotics<td>Quartz Hill High School<td>Quartz Hill<td>TBD</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/6060">6060</a><td>Circuit Serpents<td>Rosamond High School<td>Rosamond<td>TBD</tr>
-<tr><td><a href="http://www.thebluealliance.com/team/6405">6060</a><td>Entrebots<td>Community Team<td>Palmdale<td>TBD</tr>
+<tr><td><a href="http://www.thebluealliance.com/team/399">399</a><td>Eagle Robotics<td>Lancaster High School<td>Lancaster<td><a href="http://www.thebluealliance.com/event/2018utwv">Utah</a>, <a href="http://www.thebluealliance.com/event/2018nvlv">Las Vegas</a>, <a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a> </tr>
+<tr><td><a href="http://www.thebluealliance.com/team/585">585</a><td>Cyber Penguins<td>Tehachapi High School<td>Tehachapi<td><a href="http://www.thebluealliance.com/event/2018azfl">Arizona North</a>, <a href="http://www.thebluealliance.com/event/2018nvlv">Las Vegas</a>, <a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a></tr>
+<tr><td><a href="http://www.thebluealliance.com/team/2339">2339</a><td>Robolopes<td>Antelope Valley High School<td>Lancaster<td><a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a></tr>
+<tr><td><a href="http://www.thebluealliance.com/team/5012">5012</a><td>Gryffingear<td>The Palmdale Aerospace Academy<td>Palmdale<td><a href="http://www.thebluealliance.com/event/2018casd">San Diego</a>, <a href="http://www.thebluealliance.com/event/2018nvlv">Las Vegas</a>, <a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a></tr>
+<tr><td><a href="http://www.thebluealliance.com/team/5869">5869</a><td>Radical Robotics<td>Quartz Hill High School<td>Quartz Hill<td><a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a></tr>
+<tr><td><a href="http://www.thebluealliance.com/team/6060">6060</a><td>Circuit Serpents<td>Rosamond High School<td>Rosamond<td><a href="http://www.thebluealliance.com/event/2018azfl">Arizona North</a>, <a href="http://www.thebluealliance.com/event/2018caav">Antelope Valley</a></tr>
 </table>
 
 </center>
@@ -102,10 +99,10 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [48, 22, 2, 5, 2, 14, 2, 0, 0],
+            data: [48, 22, 2, 5, 2, 14, 2, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -146,10 +143,10 @@ var ctx = document.getElementById("winChart");
 var myChart2 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [5, 1, 0, 0, 1, 4, 0, 0, 0],
+            data: [5, 1, 0, 0, 1, 4, 0, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -189,10 +186,10 @@ var ctx = document.getElementById("rcaChart");
 var myChart3 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [5, 2, 0, 0, 0, 0, 0, 0, 0],
+            data: [5, 2, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -233,10 +230,10 @@ var ctx = document.getElementById("wdChart");
 var myChart4 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [3, 7, 0, 0, 0, 0, 0, 0, 0],
+            data: [3, 7, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -277,10 +274,10 @@ var ctx = document.getElementById("elChart");
 var myChart5 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [42, 10, 1, 6, 11, 9, 0, 1, 0],
+            data: [42, 10, 1, 6, 11, 9, 0, 1],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -321,10 +318,10 @@ var ctx = document.getElementById("cmpChart");
 var myChart6 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [17, 8, 0, 1, 2, 4, 1, 0, 0],
+            data: [17, 8, 0, 1, 2, 4, 1, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -365,10 +362,10 @@ var ctx = document.getElementById("evChart");
 var myChart7 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [53, 36, 5, 9, 19, 13, 4, 2, 0],
+            data: [53, 36, 5, 9, 19, 13, 4, 2],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -409,10 +406,10 @@ var ctx = document.getElementById("rooChart");
 var myChart8 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [0, 0, 0, 2, 0, 3, 2, 0, 0],
+            data: [0, 0, 0, 2, 0, 3, 2, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
@@ -453,10 +450,10 @@ var ctx = document.getElementById("eiChart");
 var myChart9 = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060", "6405"],
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
         datasets: [{
             label: '# Awards by team',
-            data: [4, 2, 0, 0, 0, 0, 0, 0, 0],
+            data: [4, 2, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 148, 70, 0.95)',
                 'rgba(0, 128, 0, 0.95)',
