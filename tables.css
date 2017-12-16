@@ -3,6 +3,21 @@ html *
    font-family: Arial !important;
 }
 
+#cdtitle {
+	font-size: 50%;
+	font-style: italic;
+}
+
+#ko {
+	font-size: 100%;
+	font-style: bold;
+}
+
+#avr {
+	font-size: 100%;
+	font-style: bold;
+}
+
 body {
 background-color: WhiteSmoke;
 }
@@ -70,4 +85,3 @@ th, td {
 line-height: 200%;
 }
 tr:nth-child(even) {background-color: #f2f2f2}
-
