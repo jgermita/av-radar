@@ -17,13 +17,15 @@
 
 <body>
 <center>
-<h1>Countdown to Kickoff 2018:</h1>
-<h2> <p id="KO"></p> </h2>
-<h1>Countdown to Aerospace Valley Regional 2018:</h1>
-<h2> <p id="avr"></p> </h2>
-	<hr>
-	
+
+
 <table align="center">
+	<tr><h1>Countdown to Kickoff 2018:</h1>
+	<h2> <p id="KO"></p> </h2>
+	<h1>Countdown to Aerospace Valley Regional 2018:</h1>
+	<h2> <p id="avr"></p> </h2>
+
+	</tr>
 <tr id="titles"><td></td><td>Total Awards By Team</td><td></td></tr>
 <tr><td></td><td style="height:50vh"><canvas id="myChart" /></td><td></td></tr>
 <tr id="titles"><td>Event Wins</td><td>Regional Chairman's Awards</td><td>Student / Mentor Awards</td></tr>
@@ -43,16 +45,16 @@
 </tr>
 
 </tr>
-<tr id="titles"><td>Rookie Awards</td><td> </td><td>Engineering Inspiration Awards</td></tr>
+<tr id="titles"><td>Rookie Awards</td><td># Years Active</td><td>Engineering Inspiration Awards</td></tr>
 <tr>
 <td>
 	<canvas id="rooChart" />
 </td>
 
 <td>
-	<canvas id="todoChart"/>
+	<canvas id="yearChart"/>
 </td>
-<td>	
+<td>
 	<canvas id="eiChart" />
 </td>
 
@@ -63,7 +65,7 @@
 	<canvas id="elChart" />
 </td>
 
-<td>	
+<td>
 	<canvas id="cmpChart" />
 </td>
 
@@ -71,10 +73,7 @@
 	<canvas id="evChart" />
 </td>
 <tr><td></td><td></td><td></td></tr>
-</table>
-<br><br>
-	<hr>
-<h1>Upcoming Events</h1>
+<tr><h1>Upcoming Events</h1>
 <table style="width:100vh" align="center">
 <tr id="headers"><td>#<td>Name<td>School<td>City<td>Event</tr>
 <tr><td><a href="http://www.thebluealliance.com/team/399">399</a><td>Eagle Robotics<td>Lancaster High School<td>Lancaster<td><a href="http://www.thebluealliance.com/event/2018utwv">Utah</a>, <a href="http://www.thebluealliance.com/event/2018nvlv">Las Vegas</a>, <a href="http://www.thebluealliance.com/event/2018caav">Aerospace Valley</a> </tr>
@@ -83,7 +82,11 @@
 <tr><td><a href="http://www.thebluealliance.com/team/5012">5012</a><td>Gryffingear<td>The Palmdale Aerospace Academy<td>Palmdale<td><a href="http://www.thebluealliance.com/event/2018casd">San Diego</a>, <a href="http://www.thebluealliance.com/event/2018nvlv">Las Vegas</a>, <a href="http://www.thebluealliance.com/event/2018caav">Aerospace Valley</a></tr>
 <tr><td><a href="http://www.thebluealliance.com/team/5869">5869</a><td>Radical Robotics<td>Quartz Hill High School<td>Quartz Hill<td><a href="http://www.thebluealliance.com/event/2018caav">Aerospace Valley</a></tr>
 <tr><td><a href="http://www.thebluealliance.com/team/6060">6060</a><td>Circuit Serpents<td>Rosamond High School<td>Rosamond<td><a href="http://www.thebluealliance.com/event/2018azfl">Arizona North</a>, <a href="http://www.thebluealliance.com/event/2018caav">Aerospace Valley</a></tr>
+</table></tr>
 </table>
+<br><br>
+	<hr>
+
 
 </center>
 
@@ -136,12 +139,12 @@ var myChart = new Chart(ctx, {
         legend: {
 			position: 'bottom'
 		},
-		
+
 		animation: {
 			easing: "easeOutBounce",
 			animationSteps: 240
 		}
-		
+
     }
 });
 
@@ -180,13 +183,55 @@ var myChart2 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
     }
 });
 
+
+var ctx = document.getElementById("yearChart");
+var myChart2 = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["399", "585", "1110", "1641", "2339", "5012", "5869", "6060"],
+        datasets: [{
+            label: '# Awards by team',
+            data: [19, 18, 5, 5, 10, 5, 3, 3],
+            backgroundColor: [
+                'rgba(255, 148, 70, 0.95)',
+                'rgba(0, 128, 0, 0.95)',
+                'rgba(154, 4, 13, 0.6)',
+                'rgba(128, 0, 0, 0.6)',
+                'rgba(128, 0, 0, 1.0)',
+                'rgba(116, 0, 1, 0.9)',
+                'rgba(0, 0, 255, 0.95)',
+                'rgba(128, 0, 0, 0.8)'
+            ],
+            borderColor: [
+                'rgba(57,39,95,1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(211, 166, 37, 1)',
+                'rgba(255, 216, 0, 1)',
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        legend: {
+			display: false
+		},
+
+		animation: {
+			easing: "easeOutSine"
+		}
+    }
+});
 
 var ctx = document.getElementById("rcaChart");
 var myChart3 = new Chart(ctx, {
@@ -223,11 +268,11 @@ var myChart3 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -267,11 +312,11 @@ var myChart4 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -311,11 +356,11 @@ var myChart5 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -355,11 +400,11 @@ var myChart6 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -399,11 +444,11 @@ var myChart7 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -443,11 +488,11 @@ var myChart8 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -487,11 +532,11 @@ var myChart9 = new Chart(ctx, {
         legend: {
 			display: false
 		},
-		
+
 		animation: {
 			easing: "easeOutSine"
 		}
-        
+
     }
 });
 
@@ -554,4 +599,3 @@ var x2 = setInterval(function() {
 
 <footer><center>v0.075<br>
 Contact Jeremy Germita (jeremy DOT germita AT gmail DOT com) with questions, comments, or concerns.</center></footer>
-
